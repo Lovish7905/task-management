@@ -7,7 +7,7 @@ import HomePage from "./Components/HomePage.jsx";
 import { UserContextProvider } from "./Components/UserContext";
 import CreateTask from "./Components/CreateTask.jsx";
 import EditPage from "./Components/EditPage.jsx";
-axios.defaults.baseURL = "https://task-management-b6mh.onrender.com";
+axios.defaults.baseURL = "https://task-management-server-1-sysj.onrender.com";
 axios.defaults.withCredentials = true;
 function App() {
   return (
