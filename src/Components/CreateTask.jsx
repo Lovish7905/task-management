@@ -21,7 +21,7 @@ function CreateTask() {
         priority,
         deadline,
       });
-      
+      alert("task created ");
       
 
     setRedirect("/home");
