@@ -60,7 +60,9 @@ function CreateTask() {
       </Link>
 
       <div className="flex  items-center justify-center flex-col w-2/4 h-screen bg-gray-200 rounded-2xl">
-        <h2 className="font-bold gap-2">Create Your Task</h2>
+        <form onSubmit={createtask}>
+        
+           <h2 className="font-bold gap-2">Create Your Task</h2>
         <div className="gap-3">
           <input
             type="text"
@@ -103,9 +105,12 @@ function CreateTask() {
           />
         </div>
 
-        <button className="primary1 mt-5" onClick={createtask}>
+        <button className="primary1 mt-5">
           Create Task
         </button>
+        
+        </form>
+     
       </div>
     </div>
   );
