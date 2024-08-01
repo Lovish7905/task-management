@@ -49,7 +49,7 @@ function EditPage() {
   }
 
   return (
-    <div className="flex justify-center">
+  <div className="flex justify-center">
       <Link
         to="/home"
         className="absolute right-70 top-0  bottom-0 cursor-pointer"
@@ -71,7 +71,9 @@ function EditPage() {
       </Link>
 
       <div className="flex  items-center justify-center flex-col w-2/4 h-screen bg-gray-200 rounded-2xl">
-        <h2 className="font-bold gap-2">Edit Your Task</h2>
+        <form onSubmit={handleform}>
+        
+           <h2 className="font-bold gap-2">Edit Your Task</h2>
         <div className="gap-3">
           <input
             type="text"
@@ -114,9 +116,12 @@ function EditPage() {
           />
         </div>
 
-        <button className="primary1 mt-5" onClick={handleform}>
+        <button className="primary1 mt-5">
           Edit Task
         </button>
+        
+        </form>
+     
       </div>
     </div>
   );
