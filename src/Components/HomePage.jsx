@@ -68,14 +68,14 @@ function HomePage() {
   }
 
   return (
-    <div className="">
+    <div className="w-full">
       <h1 className=" text-center font-bold bg-slate-500 ">Home Page</h1>
       <div className="flex h-full">
         {/*Side bar Left Side*/}
 
         <div className="flex-grow-0 w-1/4 bg-orange-100 justify-center  ">
           {!!user && (
-            <div className="mt-5 ml-10 font-serif ">
+            <div className="mt-5  font-serif ">
               {" "}
               Welcome Back {user.name} :)
             </div>
@@ -102,7 +102,7 @@ function HomePage() {
           </div>
         </div>
         {/*Right Side Task Showing Panel*/}
-        <div className="flex border-solid border-gray-950 flex-grow  bg-slate-700  justify-evenly ">
+        <div className="flex border-solid border-gray-950 flex-grow  bg-slate-700  justify-evenly flex-wrap ">
           <div
             className="border border-solid  w-full"
             droppable
