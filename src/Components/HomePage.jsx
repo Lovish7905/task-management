@@ -47,9 +47,10 @@ function HomePage() {
     axios.get(`/task/${todoid}`).then((res) => {
       
       createdraguser(res.data._id, category);
+          setrefresh(true);
     });
     
-      setrefresh(true);
+  
     
   }
   const updateState = () => {
