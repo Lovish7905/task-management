@@ -39,7 +39,7 @@ function HomePage() {
   }
 
   function dragdropped(e, category) {
-    e.preventDefault();
+    
   
     let todoid = e.dataTransfer.getData("todoid");
     
