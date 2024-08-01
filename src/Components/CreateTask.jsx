@@ -10,9 +10,9 @@ function CreateTask() {
   const [redirect, setRedirect] = useState("");
   const { column } = useParams();
 
-  function createtask(e) {
+  async function createtask(e) {
     e.preventDefault();
-    axios
+   await axios
       .post("/addTask", {
         title,
         column,
