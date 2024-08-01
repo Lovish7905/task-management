@@ -20,15 +20,9 @@ function CreateTask() {
         status,
         priority,
         deadline,
-      })
-      .then((res) => {
-        console.log("task added succcessfuly to db.  Message : " + res.data);
-
-        // return <Navigate to="/home" />;
-      })
-      .catch((err) =>
-        console.log("Some error while adding task to db . Err name : " + err)
-      );
+      });
+      
+      
 
     setRedirect("/home");
   }
