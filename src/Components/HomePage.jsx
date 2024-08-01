@@ -20,7 +20,7 @@ function HomePage() {
 
      fetchData();
       
-    },1000);
+    },250);
   
     
   }, [refresh]);
