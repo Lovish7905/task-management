@@ -14,10 +14,15 @@ function HomePage() {
     async function fetchData() {
       const { data: response } = await axios.get("/alltasks");
       setTasks(response);
-      
+      setrefresh(false);
     }
-    fetchData();
-    setrefresh(false);
+    setTimeout(()=>{
+
+     fetchData();
+      
+    },1000);
+  
+    
   }, [refresh]);
 
   async function logout(e) {
