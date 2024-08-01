@@ -14,7 +14,7 @@ function HomePage() {
     async function fetchData() {
       const { data: response } = await axios.get("/alltasks");
       setTasks(response);
-      console.log(tasks);
+      
     }
     fetchData();
     setrefresh(false);
