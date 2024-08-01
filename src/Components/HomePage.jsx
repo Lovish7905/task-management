@@ -30,27 +30,27 @@ function HomePage() {
     return <Navigate to={redirect} />;
   }
   function dragstarted(e, id) {
-    console.log("drag has started ");
+    
     e.dataTransfer.setData("todoid", id);
   }
   function draggingover(e) {
     e.preventDefault();
-    console.log("Dragging over now");
+    
   }
 
   function dragdropped(e, category) {
     e.preventDefault();
-    console.log("you have dropped");
+  
     let todoid = e.dataTransfer.getData("todoid");
-    console.log(todoid);
+    
 
     axios.get(`/task/${todoid}`).then((res) => {
-      console.log(res.data);
+      
       createdraguser(res.data._id, category);
     });
-    setTimeout(() => {
+    
       setrefresh(true);
-    }, 200);
+    
   }
   const updateState = () => {
     setrefresh(true);
