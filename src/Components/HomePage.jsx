@@ -68,9 +68,9 @@ function HomePage() {
   }
 
   return (
-    <div className="w-full">
+    <div className="">
       <h1 className=" text-center font-bold bg-slate-500 ">Home Page</h1>
-      <div className="flex h-full">
+      <div className="flex h-full w-full">
         {/*Side bar Left Side*/}
 
         <div className="flex-grow-0 w-1/4 bg-orange-100 justify-center  ">
@@ -102,7 +102,7 @@ function HomePage() {
           </div>
         </div>
         {/*Right Side Task Showing Panel*/}
-        <div className="flex border-solid border-gray-950   bg-slate-700  sm:justify-evenly sm:flex-wrap ">
+        <div className="flex border-solid border-gray-950   bg-slate-700  sm:justify-evenly md:justify-evenly lg:justify-stretch sm:flex-wrap md:flex-wrap    lg:flex-nowrap ">
           <div
             className="border border-solid   "
             droppable
