@@ -70,7 +70,7 @@ function HomePage() {
   return (
     <div className="">
       <h1 className=" text-center font-bold bg-slate-500 ">Home Page</h1>
-      <div className="flex h-full w-full">
+      <div className="flex h-full w-full sm:flex-wrap">
         {/*Side bar Left Side*/}
 
         <div className="flex-grow-0 w-1/4 bg-orange-100 justify-center  ">
