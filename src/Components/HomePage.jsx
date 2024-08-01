@@ -102,7 +102,7 @@ function HomePage() {
           </div>
         </div>
         {/*Right Side Task Showing Panel*/}
-        <div className="flex border-solid border-gray-950 flex-grow  bg-slate-700  sm:justify-evenly sm:flex-wrap ">
+        <div className="flex border-solid border-gray-950   bg-slate-700  sm:justify-evenly sm:flex-wrap ">
           <div
             className="border border-solid   "
             droppable
