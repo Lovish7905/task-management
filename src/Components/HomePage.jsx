@@ -73,7 +73,7 @@ function HomePage() {
       <div className="flex h-full">
         {/*Side bar Left Side*/}
 
-        <div className="flex-grow-0 w-2/4 bg-orange-100 justify-center  ">
+        <div className="flex-grow-0 w-1/4 bg-orange-100 sm:justify-start md:justify-center lg:justify-center  ">
           {!!user && (
             <div className="mt-5  font-serif ">
               {" "}
@@ -102,7 +102,7 @@ function HomePage() {
           </div>
         </div>
         {/*Right Side Task Showing Panel*/}
-        <div className="flex border-solid border-gray-950 flex-grow  bg-slate-700  justify-stretch flex-wrap ">
+        <div className="flex border-solid border-gray-950 flex-grow  bg-slate-700 md:w-full lg:w-full md:justify-evenly lg:justify-evenly flex-wrap ">
           <div
             className="border border-solid  "
             droppable
