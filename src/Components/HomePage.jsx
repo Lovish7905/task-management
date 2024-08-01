@@ -102,9 +102,9 @@ function HomePage() {
           </div>
         </div>
         {/*Right Side Task Showing Panel*/}
-        <div className="flex border-solid border-gray-950 w-full  bg-slate-700  justify-stretch sm:flex-wrap md:flex-wrap   lg:flex-nowrap ">
+        <div className="flex border-solid border-gray-950   bg-slate-700  justify-evenly sm:flex-wrap  ">
           <div
-            className="border border-solid   "
+            className="border border-solid w-full  "
             droppable
             onDragOver={(e) => draggingover(e)}
             onDrop={(e) => dragdropped(e, "todo")}
@@ -145,7 +145,7 @@ function HomePage() {
             </div>
           </div>
           <div
-            className="border border-solid     "
+            className="border border-solid w-full    "
             droppable
             onDragOver={(e) => draggingover(e)}
             onDrop={(e) => dragdropped(e, "inprogress")}
@@ -185,7 +185,7 @@ function HomePage() {
           </div>
 
           <div
-            className="border border-solid     "
+            className="border border-solid w-full    "
             droppable
             onDragOver={(e) => draggingover(e)}
             onDrop={(e) => dragdropped(e, "undereview")}
@@ -227,7 +227,7 @@ function HomePage() {
           </div>
 
           <div
-            className="border border-solid   "
+            className="border border-solid w-full  "
             droppable
             onDragOver={(e) => draggingover(e)}
             onDrop={(e) => dragdropped(e, "finished")}
